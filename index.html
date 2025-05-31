@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <!-- Loader Container -->
+  <iframe id="loader-frame" src="loader.html" style="border: none; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999;"></iframe>
+  
+  <script>
+    // Wait until the loader is visible for a few seconds, then show the main content
+    window.onload = function() {
+        setTimeout(() => {
+            document.getElementById("loader-frame").style.display = "none"; // Hide loader
+            document.getElementById("content").style.display = "block"; // Show website content
+        }, 1000); // Adjust time as needed (5 seconds)
+    };
+</script>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Sai Chechare<span>.</span></a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <p class="intro-text">Hello, my name is</p>
+                <h1>Sai Chechare</h1>
+                <h2>I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+                <p class="description">
+                   I am a final year B.Tech student in Computer Science and Engineering
+with a strong foundation in various computer technologies and
+programming languages. I am proficient in UI/UX development and have
+experience in project management. Eager to apply my knowledge and
+skills, I look forward to contributing to your organization while
+continuously learning and growing in the industry.
+
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="Sai Chechare Resume(IT) portfolio.pdf" class="btn secondary">Resume Download</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon github"></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin"></a>
+                    <a href="mailto:contact@example.com" class="social-icon email"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title"><span>01.</span> About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="Sai.jpg" alt="Sai Chechare">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Sai, a passionate Computer Engineering student with a focus on software development. My journey in technology began when I disassembled my first computer at age 12, curious about what made it work.</p>
+                        <p>Currently pursuing my Bachelor's degree in Computer Engineering at Sandip University, I specialize in embedded systems programming, full-stack web development and Data Analytics.</p>
+                        <p>Outside of my academic pursuits, I'm an active contributor to open-source projects and regularly participate in hackathons and coding competitions.</p>
+                        <div class="education">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <h4>B.Tech in Science in Computer Engineering</h4>
+                                <p>Sandip University</p>
+                                <p>Expected Graduation: May 2026</p>
+                                <p>GPA: 8.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title"><span>02.</span> My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon code"></div>
+                        <h3>Programming</h3>
+                        <div class="skill-item">
+                            <span>HTML/CSS/JavaScript</span>
+                            <div class="progress-bar"><div style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar"><div style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C/C++/Java</span>
+                            <div class="progress-bar"><div style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon web"></div>
+                        <h3>Web Development</h3>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar"><div style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar"><div style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar"><div style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon hardware"></div>
+                        <h3>Data Analytics</h3>
+                        <div class="skill-item">
+                            <span>Power BI</span>
+                            <div class="progress-bar"><div style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Excel</span>
+                            <div class="progress-bar"><div style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar"><div style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title"><span>03.</span> My Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="hardware">Data</button>
+                    <button class="filter-btn" data-filter="AI">AI</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <img src="game.png" alt="GameFing Learning Platform">
+                        <div class="project-content">
+                            <h3>GameFing Learning Platform with AI Chatbot and Automatic Test Generation</h3>
+                            <p>Developed Gamefing, an AI-powered learning platform featuring an interactive chatbot for personalized learning and automatic test generation to enhance student engagement and assessment.</p>
+                            <div class="project-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                                <a href="#" class="demo-link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="AI">
+                        <img src="clon.png" alt="AI Voice Clonning">
+                        <div class="project-content">
+                            <h3>AI Voice Cloning Platform</h3>
+                            <p>Voice cloning is the process of creating a digital replica of a person’s voice using artificial intelligence. This synthetic voice can then be used to generate speech that sounds like the original speaker, based on just a few seconds or minutes of audio.</p>
+                            <div class="project-tags">
+                                <span>HTML/CSS</span>
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                                <a href="https://www.linkedin.com/posts/sai-chechare-064191322_ai-audiobook-voicecloning-activity-7308936110183755776-o56u?utm_source=share&utm_medium=member_android&rcm=ACoAAFGKTAwBgg5BEunY-TcWADehxx745rx8xKM" class="demo-link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <img src="intern.png" alt="Web Project">
+                        <div class="project-content">
+                            <h3>Internship Providing website</h3>
+                            <p>Built a web platform to connect students with internship opportunities.</p>
+                            <div class="project-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            
+                            </div>
+                            <div class="project-links">
+                                <a href="https://3svpvtltd.github.io/3SV-Software-Solutions/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                                <a href="https://3svpvtltd.github.io/3SV-Software-Solutions/" class="demo-link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title"><span>04.</span> Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="date">2025</span>
+                            <h3>Web Developer Intern Lead
+</h3>
+                            <h4>3SV Software Solutions</h4>
+                            <p>Full-stack Web Developer Intern at 3SV Software Solutions, contributing to both front-end and back-end development tasks while leading a team of 25 interns, coordinating project efforts and ensuring timely delivery of key components.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="date">2024</span>
+                            <h3>Data Analytics Intern</h3>
+                            <h4>Campalin Innovations</h4>
+                            <p>Performed data analytics research at Campalin Innovations, focusing on developing efficient analytical models for real-world applications. Contributed to insights that supported product development and strategic decision-making.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="date">2023</span>
+                            <h3>Web Developer Intern</h3>
+                            <h4>Acmegrade</h4>
+                            <p>Web Developer Intern at Acmegrade, contributing to both front-end and back-end development tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title"><span>05.</span> Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="icon email"></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:john.doe@example.com">saichechare2004@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon phone"></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">8530957253</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon location"></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Nashik, Maharashtra,<br>India</p>
+                            </div>
+                        </div>
+                        <ul class="wrapper">
+  <li class="icon linkedin">
+    <span class="tooltip">LinkedIn</span>
+    <a href="https://www.linkedin.com/in/sai-chechare-064191322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+      <span><i class="fa-brands fa-linkedin-in"></i></span>
+    </a>
+  </li>
+
+  <li class="icon instagram">
+    <span class="tooltip">Instagram</span>
+    <a href="https://www.instagram.com/sai__chechare?igsh=d2xqd3VrNGI1dDVl" target="_blank" rel="noopener noreferrer">
+      <span><i class="fab fa-instagram"></i></span>
+    </a>
+  </li>
+
+  <li class="icon github">
+    <span class="tooltip">Github</span>
+    <a href="https://github.com/saichechare" target="_blank" rel="noopener noreferrer">
+      <span><i class="fab fa-github"></i></span>
+    </a>
+  </li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2>Sai Chechare<span>.</span></h2>
+                    <p>Computer Engineering student passionate about creating innovative solutions through technology.</p>
+                </div>
+                <div class="footer-right">
+                    
+                    <p>Designed by Sai Chechare</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span>Sai Chechare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
