@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Typing effect
   const phrases = [
+    'Google Student Ambassador',
     'Software Developer',
     'Web Developer',
     'Computer Engineer',
@@ -207,3 +208,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => glowObserver.observe(section));
 });
+
